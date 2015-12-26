@@ -1,0 +1,286 @@
+/**
+ * by: onelong
+ * time: 2015.12.20
+ */
+
+body {
+	background: #595959;
+}
+
+
+/**
+ * 大白的头部 
+ */
+#baymax {
+
+	margin: 0 auto;
+	height: 600px;
+
+	overflow: hidden; 
+}
+
+#head {
+
+	position: relative;
+	z-index: 100;
+
+	width: 100px;
+	height: 64px;
+
+	margin: 0 auto;
+	/*为了和身体产生部分的重叠*/
+	margin-bottom: -20px;
+	
+	/*灰色的阴影底线*/
+	border-bottom: 5px solid #e0e0e0;
+	border-radius: 50%;
+
+	background: #fff;
+}
+
+#eye1,
+#eye2 {
+	
+	position: relative;
+
+	width: 11px;
+	height: 13px;
+
+	border-radius: 50%;
+
+	background: #282828;	
+}
+
+#eye1 {
+
+	top: 30px;
+	left: 27px;
+
+	/*给眼睛一个倾斜的角度*/
+	transform:  rotate(8deg);
+}
+
+#eye2 {
+
+	top: 17px;
+	left: 69px;
+	
+	/*给眼睛一个倾斜的角度*/
+	transform: rotate(-8deg);
+}
+
+#mouth {
+	position: relative;
+	top: 10px;
+	left: 34px;
+	
+
+	width: 38px;
+	height: 1.5px;
+
+	background: #282828;
+}
+
+
+
+/**
+ * 大白的躯干 包括心脏
+ * 大白的腹部 包括cover和躯干的连接处
+ */
+ #torso,
+ #belly {
+
+	margin: 0 auto;
+
+	border: 5px solid #e0e0e0;
+	border-top: none;
+	border-radius: 47%;
+
+	background: #fff;
+ }
+
+#torso {
+
+	z-index: 1;
+
+	width: 180px;
+	height: 200px;
+}
+
+#heart {
+
+	position: relative;
+	z-index: 111;
+	top: 40px;
+	right: -115px;
+
+	width: 25px;
+	height: 25px;
+	
+	border: 1px solid #ccc;
+	border-radius: 50%;
+
+	box-shadow: 2px 5px 2px #ccc inset;
+
+
+}
+
+#belly {
+
+	z-index: 5;
+
+	width: 245px;
+	height: 300px;
+
+	margin-top: -140px;
+}
+
+#cover {
+
+	position: relative;
+	top: -20px;
+	
+	width: 190px;
+	height: 150px;
+
+	margin: 0 auto;
+
+	border-radius: 50%;
+
+	background: #fff;
+}
+
+
+
+/**
+ * 大白的手臂
+ */
+#left-arm,
+#right-arm {
+
+	position: relative;
+	z-index: -1;
+
+ 	width: 120px;
+ 	height: 270px;
+
+ 	margin: 0 auto;
+
+  	border-radius: 50%;
+
+ 	background: #fff;
+}
+
+#left-arm {
+
+    top: -350px;
+ 	left: -100px;
+
+ 	transform: rotate(20deg);
+}
+
+#right-arm {
+
+ 	top: -620px;
+ 	left: 100px;
+
+ 	transform: rotate(-20deg);
+}
+
+
+
+/** 
+ * 手指
+ */
+#left-bigFinger,
+#right-bigFinger {
+ 	position: relative;
+ 	top: 250px;
+
+ 	width: 20px;
+ 	height: 50px;
+
+	border-radius: 50%;
+
+	background: #fff;
+}
+
+#left-bigFinger {
+
+ 	left: 50px;
+
+ 	transform: rotate(-50deg);
+}
+
+#right-bigFinger {
+
+ 	left: 50px;
+
+ 	transform: rotate(50deg);
+}
+
+#left-smallFinger,
+#right-smallFinger {
+
+ 	position: relative;
+ 	top: 195px;
+
+ 	width: 15px;
+ 	height: 35px;
+	
+	border-radius: 50%;
+
+	background: #fff;
+
+}
+
+#left-smallFinger {
+
+ 	left: 66px;
+
+ 	transform: rotate(-40deg);
+}
+
+#right-smallFinger {
+	
+	left: 39px;
+
+ 	transform: rotate(40deg);
+}
+
+
+/**
+ * 腿
+ */
+#left-leg,
+#right-leg {
+    position: relative;
+    z-index: -2;
+
+    width: 90px;
+  	height: 170px;
+
+  	margin: 0 auto;
+
+  	background: #fff;
+}
+
+#left-leg {
+
+  	top: -640px;
+  	left: -45px;
+
+  	border-radius: 40% 30% 10px 45%;
+
+	transform: rotate(-1deg);
+}
+
+#right-leg {
+	
+	top: -810px;
+	left: 50px;
+
+	border-radius: 30% 40% 45% 10px;
+
+	transform: rotate(1deg);
+}
